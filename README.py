@@ -1,9 +1,9 @@
 # SeaNMFusage: 
 
 train.py [-h] [--corpus_file CORPUS_FILE] [--vocab_file VOCAB_FILE]
-                [--max_iter MAX_ITER] [--n_topics N_TOPICS] [--alpha ALPHA]
-                [--beta BETA] [--max_err MAX_ERR] [--rand_init RAND_INIT]
-                [--fix_seed FIX_SEED]
+              [--max_iter MAX_ITER] [--n_topics N_TOPICS] [--alpha ALPHA]
+              [--beta BETA] [--max_err MAX_ERR] [--rand_init RAND_INIT]
+              [--fix_seed FIX_SEED]
 
 optional arguments:
   -h, --help            show this help message and exit
