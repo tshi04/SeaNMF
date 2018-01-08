@@ -1,4 +1,4 @@
-# SeaNMFusage: 
+# SeaNMF
 
 python version 2.7
 
