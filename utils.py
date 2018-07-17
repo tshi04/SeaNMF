@@ -2,8 +2,8 @@ import re
 import numpy as np
 
 def read_docs(file_name):
-    print 'read documents'
-    print '-'*50
+    print('read documents')
+    print('-'*50)
     docs = []
     fp = open(file_name, 'r')
     for line in fp:
@@ -16,8 +16,8 @@ def read_docs(file_name):
     return docs
 
 def read_vocab(file_name):
-    print 'read vocabulary'
-    print '-'*50
+    print('read vocabulary')
+    print('-'*50)
     vocab = []
     fp = open(file_name, 'r')
     for line in fp:
