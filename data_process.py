@@ -44,7 +44,7 @@ fp = open(args.text_file, 'r')
 fout = open(args.corpus_file, 'w')
 for line in fp:
     arr = re.split('\s', line[:-1])
-    arr = [str(vocab2id[wd]) for wd in arr]
+    arr = [str(vocab2id[wd]) for wd in arr if wd in vocab2id]
     sen = ' '.join(arr)
     fout.write(sen+'\n')
 fp.close()
