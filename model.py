@@ -165,7 +165,8 @@ class NMF(object):
 
     def nmf_iter(self):
         loss_old = 1e20
-        print 'loop begin'
+        print('loop begin')
+        start_time = time.time()
         for i in range(self.max_iter):
             self.nmf_solver()
             loss = self.nmf_loss()
@@ -174,8 +175,9 @@ class NMF(object):
             if loss_old-loss < self.max_err:
                 break
             loss_old = loss
-            print str(i), str(loss)
-        print 'loop end'
+            end_time = time.time()
+            print('Step={}, Loss={}, Time={}s'.format(i, loss, end_time-start_time))
+        print('loop end')
                 
     def nmf_solver(self):
         '''
